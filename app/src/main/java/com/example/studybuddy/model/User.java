@@ -4,15 +4,15 @@ import java.util.HashSet;
 
 public class User {
     private String name;
-    private String pronouns;
+    private String gender;
     private int year;
     private String major;
     private HashSet<String> tags;
     private String profilePicture = "./";
 
-    public User(String name, String pronouns, int year, String major, HashSet<String> tags, String profilePicture) {
+    public User(String name, String gender, int year, String major, HashSet<String> tags, String profilePicture) {
         this.name = name;
-        this.pronouns = pronouns;
+        this.gender = gender;
         this.year = year;
         this.major = major;
         this.tags = new HashSet<String>();
@@ -28,11 +28,11 @@ public class User {
     }
 
     public void setPronouns(String pronouns) {
-        this.pronouns = pronouns;
+        this.gender = gender;
     }
 
     public String getPronouns() {
-        return pronouns;
+        return gender;
     }
 
     public void setYear(int year) {
