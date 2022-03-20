@@ -27,11 +27,11 @@ public class User {
         return name;
     }
 
-    public void setPronouns(String pronouns) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
-    public String getPronouns() {
+    public String getGender() {
         return gender;
     }
 
