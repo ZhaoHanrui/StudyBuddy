@@ -5,4 +5,27 @@
     <string name="title_map">Map</string>
     <string name="title_profile">Profile</string>
     <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="year">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5+</item>
+        <item>Masters</item>
+        <item>PHD</item>
+    </string-array>
+
+    <string-array name="faculty">
+        <item>Applied Science</item>
+        <item>Science</item>
+        <item>Arts</item>
+        <item>Forestry</item>
+        <item>Business</item>
+    </string-array>
 </resources>

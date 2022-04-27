@@ -5,17 +5,15 @@ import java.util.HashSet;
 public class User {
     private String name;
     private String gender;
-    private int year;
-    private String major;
-    private HashSet<String> tags;
-    private String profilePicture = "./";
+    private String year;
+    private String faculty;
+    private String profilePicture = "";
 
-    public User(String name, String gender, int year, String major, HashSet<String> tags, String profilePicture) {
+    public User(String name, String gender, String year, String faculty, String profilePicture) {
         this.name = name;
         this.gender = gender;
         this.year = year;
-        this.major = major;
-        this.tags = new HashSet<String>();
+        this.faculty = faculty;
         this.profilePicture = profilePicture;
     }
 
@@ -35,20 +33,20 @@ public class User {
         return gender;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setMajor(String major) {
-        this.major = major;
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
 
-    public String getMajor() {
-        return major;
+    public String getFaculty() {
+        return faculty;
     }
 
     public void setProfilePicture(String profilePicture) {
@@ -57,18 +55,6 @@ public class User {
 
     public String getProfilePicture() {
         return profilePicture;
-    }
-
-    public void addTag(String tag) {
-        if (!tags.contains(tag)) {
-            tags.add(tag);
-        }
-    }
-
-    public void removeTag(String tag) {
-        if (tags.contains(tag)) {
-            tags.remove(tag);
-        }
     }
 
 }
