@@ -24,8 +24,8 @@
         tools:layout="@layout/fragment_map" />
 
     <fragment
-        android:id="@+id/navigation_profile"
-        android:name="com.example.studybuddy.ui.profile.ProfileFragment"
+        android:id="@+id/navigation_settings"
+        android:name="com.example.studybuddy.ui.settings.SettingsFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>
