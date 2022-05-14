@@ -27,7 +27,8 @@ public class MainActivity extends AppCompatActivity {
         Context i = getApplicationContext();
 
         loginButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
+            @Override
+            public void onClick(View view) {
                 try {
                     startActivity(new Intent(i, HomeActivity.class));
                 } catch (NullPointerException e) {

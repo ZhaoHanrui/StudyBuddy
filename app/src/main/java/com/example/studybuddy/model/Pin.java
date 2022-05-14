@@ -1,76 +1,44 @@
 package com.example.studybuddy.model;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.util.HashSet;
 
 public class Pin {
     private String course;
-    private int count;
-    private int capacity;
+    private Availability capacity;
+    private LatLng location;
+    private String locationSpecifics;
+    private User creator;
     private HashSet<User> listOfUsers;
-    private String location;
-    private String groupName;
 
-    public Pin(String course, int capacity, String location, User admin, String groupName) {
-        this.course = course;
-        this.count = 0;
-        this.capacity = capacity;
-        this.listOfUsers = new HashSet<User>();
-        this.location = location;
-        this.groupName = groupName;
 
-        addUser(admin);
+    private enum Availability {
+        VACANT, FILLED, FULL;
     }
 
-    public void setCourse(String course) {
-        this.course = course;
+    public Pin(String courseSubject, int number, LatLng location, String locationSpecifics, User creator) {
+        this.course = courseSubject + "" + number;
+        this.capacity = Availability.VACANT;
+        this.location = location;
+        this.locationSpecifics = locationSpecifics;
+        this.creator = creator;
+        this.listOfUsers = new HashSet<>();
     }
 
     public String getCourse() {
         return course;
     }
 
-    public void setCount(int count) {
-        this.capacity = count;
-    }
-
-    public int getCount() {
-        return count;
-    }
-
-    public void setCapacity(int capacity) {
-        this.capacity = capacity;
-    }
-
-    public int getcapacity() {
+    public Availability getCapacity() {
         return capacity;
     }
 
-    public void setLocation(String location) {
-        this.location = location;
+    public void setCapacity(Availability capacity) {
+        this.capacity = capacity;
     }
 
-    public String getLocation() {
+    public LatLng getLocation() {
         return location;
-    }
-
-    public void addUser(User user) {
-        if (!listOfUsers.contains(user) && count < capacity) {
-            listOfUsers.add(user);
-            count++;
-        }
-    }
-
-    public void removeUser(User user) {
-        if (listOfUsers.contains(user)) {
-            listOfUsers.remove(user);
-            count--;
-        }
-    }
-
-    public Boolean filterByCourse(String filterName) {
-        if (this.course.equals(filterName)) {
-            return true;
-        }
-        return false;
     }
 }
