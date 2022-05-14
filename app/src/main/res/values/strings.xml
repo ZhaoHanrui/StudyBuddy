@@ -7,11 +7,13 @@
     <string name="title_activity_maps">MapsActivity</string>
 
     <string-array name="gender">
+        <item>Gender</item>
         <item>Male</item>
         <item>Female</item>
     </string-array>
 
     <string-array name="year">
+        <item>Year</item>
         <item>1</item>
         <item>2</item>
         <item>3</item>
@@ -22,6 +24,7 @@
     </string-array>
 
     <string-array name="faculty">
+        <item>Faculty</item>
         <item>Applied Science</item>
         <item>Science</item>
         <item>Arts</item>

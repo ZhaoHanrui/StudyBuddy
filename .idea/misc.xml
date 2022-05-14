@@ -27,11 +27,14 @@
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable-anydpi/ic_message_black_24dp.xml" value="0.133" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.133" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.133" />
+        <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable/ic_baseline_vpn_key_24.xml" value="0.1355" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.133" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/drawable/ic_profile_black_24dp.xml" value="0.133" />
+        <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_explore.xml" value="0.22" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_maps.xml" value="0.1425925925925926" />
+        <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_settings.xml" value="0.22" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_signout.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/activity_signup.xml" value="0.22" />
@@ -44,6 +47,7 @@
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/signout_page.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/user_profile.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/layout/user_row_display.xml" value="0.22" />
+        <entry key="..\:/Users/mck64/Desktop/Projects/Java/Study Buddy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
