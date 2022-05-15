@@ -1,50 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:padding="16dp"
-    android:layout_height="match_parent" android:layout_width="0dp">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/profile_picture"
-        android:layout_width="120dp"
-        android:layout_height="120dp" />
-
-    <TextView
-        android:id="@+id/name"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_toRightOf="@id/profile_picture" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/gender"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/name"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/profile_picture" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp" />
 
-    <TextView
-        android:id="@+id/year"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/gender"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/profile_picture" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/faculty"
-        style="@style/TextAppearance.AppCompat.Title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/gender"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/profile_picture" />
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/display_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
 
 </RelativeLayout>
