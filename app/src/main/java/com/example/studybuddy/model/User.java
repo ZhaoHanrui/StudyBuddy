@@ -3,17 +3,10 @@ package com.example.studybuddy.model;
 import android.widget.ImageView;
 
 public class User {
-    private String firstName;
-    private String lastName;
-    private String gender;
-    private String year;
-    private String faculty;
-    private String email;
-    private String password;
-    private ImageView profilePicture;
+    private String firstName, lastName, gender, year, faculty, email, password, profilePicUrl;
 
     public User(String firstName, String lastName, String gender, String year,
-                String faculty, String email, String password, ImageView profilePicture) {
+                String faculty, String email, String password, String profilePicUrl) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -21,7 +14,7 @@ public class User {
         this.faculty = faculty;
         this.email = email;
         this.password = password;
-        this.profilePicture = profilePicture;
+        this.profilePicUrl = profilePicUrl;
     }
 
     public void setFirstName(String name) {
@@ -76,16 +69,12 @@ public class User {
         this.password = password;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassword() { return password; }
+
+    public void setProfilePicUrl(String profilePicUrl) {
+        this.profilePicUrl = profilePicUrl;
     }
 
-    public void setProfilePicture(ImageView profilePicture) {
-        this.profilePicture = profilePicture;
-    }
-
-    public ImageView getProfilePicture() {
-        return profilePicture;
-    }
+    public String getProfilePicUrl() { return profilePicUrl; }
 
 }
